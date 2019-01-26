@@ -1,0 +1,45 @@
+.media {
+    border: 3px solid rgb(120, 164, 247);
+    border-radius: 2px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.last {
+    width: 34%;
+    margin: auto;
+}
+
+#button-holder {
+    justify-content: center;
+    display: flex;
+}
+
+.pick-one {
+    margin: 20px;
+}
+
+.pick-one:hover {
+    cursor: pointer;
+}
+
+#info-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+#trademark {
+    color: rgb(114, 4, 187);
+    background-color: rgb(233, 236, 239);
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+}
+
+#users-choice {
+    text-align: center;
+    font-weight: bold;
+}

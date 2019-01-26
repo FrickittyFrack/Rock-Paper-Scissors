@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Rock, Paper, Scissors, Lizard, Spock</title>
+
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+        <!-- Bootstrap CSS CDN  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+        <!-- JQuery Link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Firebase DB Link -->
+        <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+        <!-- Moment.js Link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+        <!-- javascript Link -->
+        <script src="assets/javascript/app.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Rock, Paper, Scissors, Lizard, Spock</h1>
+                <p class="lead">A better way to settle pointless battles</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <div id="clicky-clackitty" class="row"></div>
+
+        <div id="button-holder"><button type="button" class="start-button btn btn-danger btn-lg">Play</button></div>
+
+        <br><br>
+
+        <div id="users-choice"></div>
+
+        <br><br>
+
+        <p class="lead text-center">
+            Don't know how it works? Here's a guide:
+        </p>
+
+        <div class="container">
+        
+            <ul class="list-unstyled">
+                
+                <div class="row">
+                    <li class="media col">
+                        <img src="assets/images/scissors.jpg" height="100" width="100" class="align-self-center mr-3" alt="scissors">
+                        <div class="media-body">
+                            <h5 class="mt-0">Scissors</h5>
+                            cuts paper
+                        </div>
+                    </li>
+                
+                    <li class="media col">
+                        <img src="assets/images/paper.jpg" height="100" width="100" class="align-self-center mr-3" alt="paper">
+                        <div class="media-body">
+                            <h5 class="mt-0">Paper</h5>
+                            covers rock
+                        </div>
+                    </li>
+                    
+                    <li class="media col">
+                        <img src="assets/images/rock.jpg" height="100" width="100" class="align-self-center mr-3" alt="rock">
+                        <div class="media-body">
+                            <h5 class="mt-0">Rock</h5>
+                            crushes lizard
+                        </div>
+                    </li>
+                </div>
+
+                <div class="row">
+                    <li class="media col">
+                        <img src="assets/images/lizard.jpg" height="100" width="100" class="align-self-center mr-3" alt="lizard">
+                        <div class="media-body">
+                            <h5 class="mt-0">Lizard</h5>
+                            poisons Spock
+                        </div>
+                    </li>
+
+                    <li class="media col">
+                        <img src="assets/images/spock.jpg" height="100" width="100" class="align-self-center mr-3" alt="spock">
+                        <div class="media-body">
+                            <h5 class="mt-0">Spock</h5>
+                            smashes scissors
+                        </div>
+                    </li>
+
+                    <li class="media col">
+                        <img src="assets/images/scissors.jpg" height="100" width="100" class="align-self-center mr-3" alt="scissors">
+                        <div class="media-body">
+                            <h5 class="mt-0">Scissors</h5>
+                            decapitates lizard
+                        </div>
+                    </li>
+                </div>
+
+                <div class="row">
+                    <li class="media col">
+                        <img src="assets/images/lizard.jpg" height="100" width="100" class="align-self-center mr-3" alt="lizard">
+                        <div class="media-body">
+                            <h5 class="mt-0">Lizard</h5>
+                            eats paper
+                        </div>
+                    </li>
+
+                    <li class="media col">
+                        <img src="assets/images/paper.jpg" height="100" width="100" class="align-self-center mr-3" alt="paper">
+                        <div class="media-body">
+                            <h5 class="mt-0">Paper</h5>
+                            disproves Spock
+                        </div>
+                    </li>
+                    
+                    <li class="media col">
+                        <img src="assets/images/spock.jpg" height="100" width="100" class="align-self-center mr-3" alt="spock">
+                        <div class="media-body">
+                            <h5 class="mt-0">Spock</h5>
+                            vaporizes rock
+                        </div>
+                    </li>
+                </div>
+
+                <li class="media last">
+                    <img src="assets/images/rock.jpg" height="100" width="100" class="align-self-center mr-3" alt="rock">
+                    <div class="media-body">
+                        <h5 class="mt-0">Rock</h5>
+                        crushes scissors
+                    </div>
+                </li>
+
+            </ul>
+    
+        </div>
+
+        <div id="trademark">
+            Rachel Harris 2019 &#169; &trade; &#174;
+        </div>
+
+    </body>
+
+</html>
