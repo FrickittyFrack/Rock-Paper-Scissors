@@ -55,6 +55,9 @@ $(document).ready(function() {
 
         $(".pick-one").on("click", function() { 
             
+            var ranNum = Math.floor(Math.random() * options.length);
+            var computerChoice = options[ranNum].text;
+
             var userChoice = $(this).text();
             
             $("#users-choice").text("You've picked " + userChoice);
@@ -64,6 +67,44 @@ $(document).ready(function() {
                 usersChoice: userChoice
 
             });
+
+            if(
+                userChoice === 'Rock' && computerChoice === 'Paper' ||
+                userChoice === 'Rock' && computerChoice === 'Spock' ||
+                userChoice === 'Paper' && computerChoice === 'Scissors' ||
+                userChoice === 'Paper' && computerChoice === 'Lizard' ||
+                userChoice === 'Scissors' && computerChoice === 'Rock' ||
+                userChoice === 'Scissors' && computerChoice === 'Spock' ||
+                userChoice === 'Lizard' && computerChoice === 'Rock' ||
+                userChoice === 'Lizard' && computerChoice === 'Scissors' ||
+                userChoice === 'Spock' && computerChoice === 'Paper' ||
+                userChoice === 'Spock' && computerChoice === 'Lizard') {
+                console.log("Loss");
+                $("#result").text("You lost");
+            };
+            if(
+                userChoice === 'Rock' && computerChoice === 'Scissors' ||
+                userChoice === 'Rock' && computerChoice === 'Lizard' ||
+                userChoice === 'Paper' && computerChoice === 'Spock' ||
+                userChoice === 'Paper' && computerChoice === 'Rock' ||
+                userChoice === 'Scissors' && computerChoice === 'Lizard' ||
+                userChoice === 'Scissors' && computerChoice === 'Paper' ||
+                userChoice === 'Lizard' && computerChoice === 'Paper' ||
+                userChoice === 'Lizard' && computerChoice === 'Spock' ||
+                userChoice === 'Spock' && computerChoice === 'Rock' ||
+                userChoice === 'Spock' && computerChoice === 'Scissors') {
+                console.log("Win");
+                $("#result").text("You won!");
+            };
+            if(
+                userChoice === 'Rock' && computerChoice === 'Rock' ||
+                userChoice === 'Paper' && computerChoice === 'Paper' ||
+                userChoice === 'Scissors' && computerChoice === 'Scissors' ||
+                userChoice === 'Lizard' && computerChoice === 'Lizard' ||
+                userChoice === 'Spock' && computerChoice === 'Spock') {
+                console.log("Tie");
+                $("#result").text("It's a draw");
+            };
         });
     };
 });
