@@ -1,5 +1,37 @@
+.rock {
+    color: #ff0000;
+}
+.paper {
+    color: #ffe100;
+}
+.scissors {
+    color: #af3be5;
+}
+.lizard {
+    color: #40bc57;
+}
+.spock {
+    color: #15b2ff;
+}
+
+.lizard-background {
+    background-color: #b2ffc0;
+}
+.scissors-background {
+    background-color: #e0b3f5;
+}
+.paper-background {
+    background-color: #fff5a7;
+}
+.rock-background {
+    background-color: #ff9d9d;
+}
+.spock-background {
+    background-color: #c7ecff;
+}
+
 .media {
-    border: 3px solid rgb(120, 164, 247);
+    border: solid 2px;
     border-radius: 2px;
     padding: 2px;
     margin: 2px;
@@ -10,13 +42,18 @@
     margin: auto;
 }
 
+#clicky-clackitty {
+    text-align: center;
+}
+
 #button-holder {
     justify-content: center;
     display: flex;
 }
 
 .pick-one {
-    margin: 20px;
+    margin: 5px;
+    text-align: center;
 }
 
 .pick-one:hover {
@@ -50,4 +87,23 @@
 
 .fa-power-off {
     color: rgb(106, 13, 192);
+}
+
+/*---------------------------------------------------*/
+/*------------------Media Queries--------------------*/
+/*---------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    body {
+      background-color: rgb(107, 100, 100);
+    }
+
+    .last {
+        width: 99%;
+    }
+
+    .white-text {
+        color: white;
+    }
 }

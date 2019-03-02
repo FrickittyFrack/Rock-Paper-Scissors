@@ -38,15 +38,15 @@ $(document).ready(function() {
 
             var image = $("<img>");
 
-            var text = $("<div id='info-text'></div>");
+            var text = $("<div id='info-text' class='white-text'></div>");
     
             text.text(options[i].text);
 
             $(choices).append(image, text);
 
             image.attr("src", "assets/images/" + options[i].pic);
-            image.attr("height", "200");
-            image.attr("width", "200");
+            image.attr("height", "150");
+            image.attr("width", "150");
     
             $("#clicky-clackitty").append(choices);
     
